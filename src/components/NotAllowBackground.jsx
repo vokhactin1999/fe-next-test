@@ -1,5 +1,5 @@
 import React from "react";
-import Spinner from "./Spinner";
+
 import "./NotAllowBackground.css";
 
 function NotAllowBackground(props) {
@@ -14,7 +14,7 @@ function NotAllowBackground(props) {
 						alt=''
 					/>
 				</div>
-				<div>
+				<div style={{ textAlign: "center" }}>
 					<p>
 						{
 							"Rotate your device's screen in the opposite direction"
