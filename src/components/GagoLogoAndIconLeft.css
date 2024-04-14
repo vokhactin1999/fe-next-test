@@ -1,0 +1,147 @@
+.logo-link,
+.logo-link.w--current {
+	z-index: 999;
+	position: fixed;
+	top: 3vw;
+	left: 3vw;
+}
+.w-inline-block {
+	max-width: 100%;
+	display: inline-block;
+}
+.logo-embed {
+	width: 22vw;
+	color: #141414;
+}
+
+.logo-member {
+	margin-bottom: 22px;
+}
+.member-content {
+	width: 33px;
+	height: 33px;
+}
+.member-content img {
+	width: 100%;
+}
+#logo {
+	width: 75px;
+	height: 95px;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+@media screen and (max-width: 991px) {
+	#logo {
+		width: 60px !important;
+		height: 70px !important;
+		background-repeat: no-repeat;
+		background-size: auto;
+	}
+}
+@media screen and (max-width: 479px) {
+
+	/* .contact-social-list {
+        display: none;
+	} */
+	.dropdown-item:hover {
+		color: #333 !important;
+		background-color: floralwhite !important;
+	}
+	.select-box .option:hover {
+		background: #fff !important;
+		color: #333 !important;
+	}
+
+	.link {
+		display: inline-block !important;
+		width: 100% !important;
+		text-align: center !important;
+		margin: 0 !important;
+		font-weight: bold;
+	}
+	.w-container {
+		max-width: none;
+	}
+	.social a {
+		display: none !important;
+	}
+	.titre-temoin.black {
+		padding-left: 5vw;
+	}
+	.social-mobile-2 a,
+	.social-mobile-1 a {
+		display: flex;
+	}
+	.w-hidden-main,
+	.w-hidden-medium,
+	.w-hidden-small {
+		display: inherit !important;
+	}
+
+	.w-hidden-tiny {
+		display: none !important;
+	}
+
+	.w-col {
+		width: 100%;
+	}
+
+	.w-col-tiny-1 {
+		width: 8.33333%;
+	}
+
+	.w-col-tiny-2 {
+		width: 16.6667%;
+	}
+
+	.w-col-tiny-3 {
+		width: 25%;
+	}
+
+	.w-col-tiny-4 {
+		width: 33.3333%;
+	}
+
+	.w-col-tiny-5 {
+		width: 41.6667%;
+	}
+
+	.w-col-tiny-6 {
+		width: 50%;
+	}
+
+	.w-col-tiny-7 {
+		width: 58.3333%;
+	}
+
+	.w-col-tiny-9 {
+		width: 75%;
+	}
+
+	.w-col-tiny-10 {
+		width: 83.3333%;
+	}
+
+	.w-col-tiny-11 {
+		width: 91.6667%;
+	}
+
+	.w-col-tiny-12 {
+		width: 100%;
+	}
+
+	.member-content {
+		width: 27px;
+		height: 27px;
+	}
+	.gago__logo-list {
+		padding-left: 4px;
+	}
+	.social-mobile-1 {
+		top: 10px !important;
+	}
+	.social-mobile-2 {
+		top: 52px !important;
+	}
+}

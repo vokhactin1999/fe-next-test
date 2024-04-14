@@ -1,0 +1,153 @@
+@import url("https://fonts.cdnfonts.com/css/berlin-sans-fb");
+
+.picker-scroll {
+	mask-image: linear-gradient(
+		to top,
+		transparent,
+		transparent 5%,
+		white 40%,
+		white 40%,
+		transparent 95%,
+		transparent
+	) !important;
+}
+.heading-2 {
+	color: #fff;
+	text-align: left;
+	margin-top: 1vh;
+	margin-bottom: 0;
+	font-size: 50%;
+	line-height: 75%;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.scrollingdiv-mobile {
+	margin-left: 2.5vw;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	scroll-behavior: smooth;
+	display: none;
+}
+.scrollingdiv-mobile div:last-child {
+	width: unset !important;
+}
+
+.scrollingdiv-mobile div > div {
+	justify-content: center !important;
+	font-family: "Berlin Sans FB", sans-serif;
+	width: 100vw;
+}
+.scroll-list-wrapper {
+	/* Thiết lập chiều cao cố định cho container để kích hoạt scroll */
+	height: 300px; /* Hoặc chiều cao bạn mong muốn */
+	overflow-y: auto; /* Cho phép scroll theo chiều dọc */
+}
+
+/* Đảm bảo picker-scroll phù hợp với container của nó */
+.picker-scroll {
+	height: 100%;
+	overflow: hidden; /* Ẩn thanh scroll không cần thiết của picker nếu có */
+}
+/* Áp dụng cho tất cả các mục trong picker */
+.picker-scroll .picker-column .picker-item {
+	transition: transform 0.3s ease, color 0.3s ease; /* Làm mượt hiệu ứng chuyển đổi màu sắc và vị trí */
+}
+
+/* Hiệu ứng khi scroll */
+.scroll-list-wrapper {
+	overflow-y: scroll;
+	scrollbar-width: thin; /* Hiệu ứng thanh cuộn mỏng cho Firefox */
+	scrollbar-color: #888 #f0f0f0; /* Màu thanh cuộn cho Firefox */
+}
+
+/* Hiệu ứng thanh cuộn cho Chrome, Edge, và Safari */
+.scroll-list-wrapper::-webkit-scrollbar {
+	width: 8px; /* Độ rộng của thanh cuộn */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-track {
+	background: #f0f0f0; /* Màu nền của track */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb {
+	background: #888; /* Màu của thumb */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb:hover {
+	background: #555; /* Màu khi hover */
+}
+/* thumbviewscroll.css */
+.scroll-list-wrapper {
+	-webkit-overflow-scrolling: touch; /* Tối ưu hóa cuộn trên iOS */
+	overflow-y: scroll; /* Cho phép cuộn dọc */
+	scrollbar-width: thin; /* Thanh cuộn mỏng cho các trình duyệt hỗ trợ */
+	scrollbar-color: #888 #f0f0f0; /* Màu sắc cho thanh cuộn */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar {
+	width: 8px; /* Điều chỉnh độ rộng của thanh cuộn */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-track {
+	background: #f0f0f0; /* Màu nền của track */
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb {
+	background: #888; /* Màu của thumb */
+	border-radius: 4px;
+}
+
+.scroll-list-wrapper::-webkit-scrollbar-thumb:hover {
+	background: #555; /* Màu của thumb khi hover */
+}
+
+.picker-scroll .picker-column .picker-item {
+	transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition cho việc thay đổi */
+}
+
+.picker-scroll .picker-column .picker-item[aria-selected="true"] {
+	color: red; /* Nổi bật mục được chọn */
+	transform: scale(2.05); /* Phóng to nhẹ mục được chọn */
+}
+.bottom-mobile {
+	display: none;
+}
+@media screen and (max-width: 1200px) {
+	.scrollingdiv-mobile {
+		display: block;
+	}
+}
+@media screen and (max-width: 479px) {
+	.scrollingdiv-mobile {
+		margin: auto;
+	}
+	.bottom-mobile {
+		display: flex;
+		display: flex;
+		justify-content: space-between;
+		width: 100vw;
+		height: 30%;
+	}
+	.scrollingdiv-mobile .bottom-mobile {
+		display: flex;
+	}
+	.gago__dropdown_mobile {
+		width: 100% !important;
+		font-size: 16px;
+	}
+	.scrollingdiv-mobile .bottom-mobile .bottom-mobile-r {
+		width: 100% !important;
+		display: flex;
+		justify-content: start !important;
+		align-items: center;
+	}
+	.scrollingdiv-mobile .bottom-mobile .bottom-mobile-r .item {
+		margin-right: 10px;
+	}
+	.scrollingdiv-mobile .bottom-mobile .bottom-mobile-l {
+		width: 100% !important;
+		display: flex;
+		align-items: center;
+	}
+}

@@ -1,0 +1,49 @@
+.html-embed-2 {
+	position: fixed;
+	top: 0%;
+	bottom: auto;
+	left: auto;
+	right: 0%;
+}
+
+.w-embed:after {
+	clear: both;
+}
+
+.header {
+	padding-top: 24px;
+	padding-right: 14px;
+}
+
+.download-proposal,
+.dropdown-item {
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.social {
+	display: flex;
+	gap: 8px;
+}
+
+.social a {
+	width: 34px;
+	height: 34px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@media screen and (max-width: 479px) {
+	.html-embed-2 {
+		position: fixed;
+		top: unset;
+		bottom: 24px;
+		left: 0;
+		right: auto;
+	}
+	.toggle-mobile {
+		font-size: 14px !important;
+	}
+}

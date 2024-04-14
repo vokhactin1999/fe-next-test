@@ -1,0 +1,176 @@
+body {
+	/* font-family: "Inter", sans-serif; */
+	overflow: overlay !important;
+	overflow-y: hidden !important;
+}
+
+::-webkit-scrollbar {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #000;
+}
+
+/* Searchbox */
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: "Inter", sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+	/* background: red; */
+	-webkit-overflow-scrolling: touch;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+}
+.side {
+	width: 50vw;
+	height: 100vh;
+}
+.w-layout-hflex {
+	flex-direction: row;
+	align-items: flex-start;
+	display: flex;
+}
+.flex-block {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+/* @font-face {
+	font-family: brl;
+	src: url("font/brlnsdb.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+} */
+
+@media screen and (max-width: 479px) {
+	.flex-block {
+		flex-wrap: wrap;
+	}
+}

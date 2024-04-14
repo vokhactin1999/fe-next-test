@@ -1,0 +1,51 @@
+.side.droite {
+	transition: 0.3s ease !important;
+	flex-direction: row;
+	order: 1;
+	justify-content: flex-start;
+	align-self: center;
+	align-items: center;
+	display: flex;
+	background-color: yellow;
+}
+
+.side.droite.en-savoir-plus {
+	background-color: var(--vert-bo);
+	flex-direction: column;
+	justify-content: space-around;
+	overflow: scroll;
+}
+.dropdown-item {
+	font-size: 14px;
+
+	color: #1c2028;
+}
+.dropdown-menu.show {
+	transform: translate(-8px, 38px) !important;
+}
+html {
+	background-attachment: fixed;
+}
+@media only screen and (min-width: 1023px) and (max-width: 1367px) {
+	.side.droite {
+		width: 40vw;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.side.droite {
+		width: 100vw;
+		height: 24svh;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.scrollingdiv {
+		width: 75%;
+		height: 20vh;
+		margin-top: 0;
+		margin-left: 0;
+	}
+	.dropdown-menu.show {
+		transform: translate(-8px, -41px) !important;
+	}
+}

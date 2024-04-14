@@ -1,0 +1,85 @@
+.side {
+	width: 50vw;
+	height: 100vh;
+}
+
+#backgroundTemoins {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.flex-block-2 {
+	justify-content: center;
+}
+
+.item-menu {
+	color: #fff;
+}
+
+.heading-2 {
+	color: #fff;
+	text-align: left;
+	margin-top: 1vh;
+	margin-bottom: 0;
+	font-family: "Berlin Sans FB", sans-serif !important;
+	font-size: 50%;
+	line-height: 75%;
+	text-decoration: none;
+}
+
+.link {
+	color: #fff;
+	text-decoration: none;
+	display: inline;
+	font-family: "Berlin Sans FB", sans-serif;
+	font-weight: bold;
+}
+
+.main-container {
+	height: 100vh;
+	justify-content: center;
+	padding-top: 0;
+}
+
+.text-block {
+	color: #78d7cd;
+	font-family: Noto Sans, sans-serif;
+}
+
+.flex-block-6 {
+	justify-content: space-between;
+	align-items: flex-start;
+	display: flex;
+}
+
+.body {
+	display: flex;
+}
+
+.scrollingdiv {
+	width: 51%;
+	height: 139.04px;
+	margin-left: 2.5vw;
+	overflow: auto;
+}
+
+#scrollingDiv {
+	overflow-y: auto;
+	/* Thêm mặt nạ bằng hình ảnh mặt nạ có độ dốc tuyến tính*/
+	mask-image: linear-gradient(
+		to bottom,
+		transparent,
+		black 20%,
+		black 70%,
+		transparent
+	);
+}
+
+.item {
+	color: white;
+	margin: 15px 0;
+	/* Tăng khoảng cách để cuộn mượt mà hơn*/
+	text-align: center;
+	font-size: 4vw;
+}

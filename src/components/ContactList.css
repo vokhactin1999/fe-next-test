@@ -1,0 +1,23 @@
+.contact-social-list {
+	position: fixed;
+
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	justify-content: center;
+	align-items: center;
+	bottom: 3% !important;
+	right: 24px !important;
+	z-index: 100;
+}
+
+.contact-social-list div {
+	border-radius: 100%;
+}
+
+.image-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	margin-bottom: 4px;
+}

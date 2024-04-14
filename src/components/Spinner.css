@@ -1,0 +1,40 @@
+.spinner-container {
+	position: fixed;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.spinner-container p {
+	font-family: 'Berlin Sans FB', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #282664;
+	max-width: 100%;
+}
+.spinner-container div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 17px;
+}
+
+.spinner-container img {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.spinner-container svg {
+	animation: spin 1s linear infinite;
+}
