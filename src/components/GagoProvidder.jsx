@@ -18,14 +18,4 @@ const GagoProvidder = () => {
 };
 
 export default GagoProvidder;
-// {
-// 	"IndexHomePage": {
-// 		"view more": "Xem thêm",
-// 		"download proposal": "Tải Xuống Portfolio",
-// 		"en version": "Phiên Bản Tiếng Anh",
-// 		"vn version": "Phiên Bản Tiếng Việt",
-// 		"vi lng": "Tiếng Việt",
-// 		"en lng": "Tiếng Anh",
-// 		"zh lng": "Tiếng Trung"
-// 	}
-// }
+
