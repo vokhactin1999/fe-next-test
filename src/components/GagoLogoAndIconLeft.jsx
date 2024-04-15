@@ -1,6 +1,7 @@
 import React from "react";
 import "./GagoLogoAndIconLeft.css";
 import SelectLanguage from "./SelectLanguage";
+import ImageGago from "./ImageGago";
 function GagoLogoAndIconLeft(props) {
 	return (
 		<a
@@ -18,9 +19,11 @@ function GagoLogoAndIconLeft(props) {
 								<div className='col-2'>
 									<div className='rounded'>
 										<div className='member-content'>
-											<img
+											<ImageGago
 												className='member'
-												src='img-optimize/Frame 4.png'
+												src='/img-optimize/Frame 4.png'
+												width={33}
+												height={33}
 												style={{
 													backgroundRepeat:
 														"no-repeat",
@@ -32,9 +35,11 @@ function GagoLogoAndIconLeft(props) {
 								</div>
 								<div className='col-2 '>
 									<div className='member-content'>
-										<img
+										<ImageGago
 											className='member'
-											src='img-optimize/Frame 5.png'
+											width={33}
+											height={33}
+											src='/img-optimize/Frame 5.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -44,9 +49,11 @@ function GagoLogoAndIconLeft(props) {
 								</div>
 								<div className='col-2 '>
 									<div className='member-content'>
-										<img
+										<ImageGago
 											className='member'
-											src='img-optimize/Frame 6.png'
+											width={33}
+											height={33}
+											src='/img-optimize/Frame 6.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -56,9 +63,11 @@ function GagoLogoAndIconLeft(props) {
 								</div>
 								<div className='col-2 '>
 									<div className='member-content'>
-										<img
+										<ImageGago
 											className='member'
-											src='img-optimize/Frame 7.png'
+											width={33}
+											height={33}
+											src='/img-optimize/Frame 7.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -68,9 +77,11 @@ function GagoLogoAndIconLeft(props) {
 								</div>
 								<div className='col-2 '>
 									<div className='member-content'>
-										<img
+										<ImageGago
 											className='member'
-											src='img-optimize/Frame 8.png'
+											width={33}
+											height={33}
+											src='/img-optimize/Frame 8.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -82,9 +93,11 @@ function GagoLogoAndIconLeft(props) {
 							<div className='row align-items-start'>
 								<div className='col-2 '>
 									<div className='member-content'>
-										<img
+										<ImageGago
 											className='member'
-											src='img-optimize/Frame 9.png'
+											width={33}
+											height={33}
+											src='/img-optimize/Frame 9.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -94,9 +107,11 @@ function GagoLogoAndIconLeft(props) {
 								</div>
 								<div className='col-2 '>
 									<div className='member-content'>
-										<img
+										<ImageGago
+											width={33}
+											height={33}
 											className='member'
-											src='img-optimize/Frame 10.png'
+											src='/img-optimize/Frame 10.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -106,9 +121,11 @@ function GagoLogoAndIconLeft(props) {
 								</div>
 								<div className='col-2 '>
 									<div className='member-content'>
-										<img
+										<ImageGago
+											width={33}
+											height={33}
 											className='member'
-											src='img-optimize/Frame 11.png'
+											src='/img-optimize/Frame 11.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
@@ -118,9 +135,11 @@ function GagoLogoAndIconLeft(props) {
 								</div>
 								<div className='col-2 '>
 									<div className='member-content'>
-										<img
+										<ImageGago
+											width={33}
+											height={33}
 											className='member'
-											src='img-optimize/Frame 12.png'
+											src='/img-optimize/Frame 12.png'
 											style={{
 												backgroundRepeat: "no-repeat",
 												backgroundSize: "cover",
