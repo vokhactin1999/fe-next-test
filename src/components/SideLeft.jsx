@@ -4,13 +4,13 @@ import React from "react";
 import {
 	useGetContentByTemoinId,
 	useGetElementById,
-	useLockRoateHorizontallyOnMobile,
 	useWindowSize,
 } from "../hook";
 import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 import "./SideLeft.css";
 import NotAllowBackground from "./NotAllowBackground";
+import ImageGago from "./ImageGago";
 
 function SideLeft(props) {
 	const selectedElement = useGetElementById();
@@ -29,23 +29,34 @@ function SideLeft(props) {
 	}
 
 	return (
-		<div
-			className='side gauche'
-			style={{ backgroundImage: `url('${selectedElement.image}')` }}>
+		<div className='side gauche' style={{ position: "relative" }}>
+			<ImageGago
+				src={`/${selectedElement.image}`}
+				fill
+				style={{ position: "absolute" }}
+			/>
 			<div className='social-mobile-1'>
 				<a
 					href='https://www.behance.net/gagostudios'
 					target='_blank'
 					className='header-link'
 					style={{ background: `${selectedElement.itemColor}` }}>
-					<img src='img-optimize/behance.svg' />
+					<ImageGago
+						width={18}
+						height={19}
+						src='/img-optimize/behance.svg'
+					/>
 				</a>
 				<a
 					href='https://www.instagram.com/gago.studios/'
 					target='_blank'
 					className='header-link'
 					style={{ background: `${selectedElement.itemColor}` }}>
-					<img src='img-optimize/instagram.svg' />
+					<ImageGago
+						width={18}
+						height={19}
+						src='/img-optimize/instagram.svg'
+					/>
 				</a>
 			</div>
 			<div className='social-mobile-2'>
@@ -54,14 +65,22 @@ function SideLeft(props) {
 					target='_blank'
 					className='header-link'
 					style={{ background: `${selectedElement.itemColor}` }}>
-					<img src='img-optimize/Facebook.svg' />
+					<ImageGago
+						width={18}
+						height={19}
+						src='/img-optimize/Facebook.svg'
+					/>
 				</a>
 				<a
 					href='https://www.linkedin.com/company/gago-studios'
 					target='_blank'
 					className='header-link'
 					style={{ background: `${selectedElement.itemColor}` }}>
-					<img src='img-optimize/Linkedin.svg' />
+					<ImageGago
+						width={18}
+						height={19}
+						src='/img-optimize/Linkedin.svg'
+					/>
 				</a>
 			</div>
 			<div className='w-layout-vflex flex-block-6'>
